@@ -10,9 +10,13 @@ bash 'update packages info' do
   EOF
 end
 
-#package 'apache2' do
-#  action :upgrade
-#end
+package 'apache2' do
+  action :upgrade
+end
+
+package 'apache2-utils' do
+  action :upgrade
+end
 
 #bash 'nagios3' do
 #  code <<-EOF
